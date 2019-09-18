@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SportsCar Review</title>
+    </head>
+    <body>
+    <!--MARL DOHN MAZO N01387542 5103 Section B-->
+        <form method="post" action="https://postman-echo.com/post">
+            <h1>Sports Car Review</h1>
+            <section>
+                <!--Name of Reviewer-->
+                <h2>Write Your Name</h2>
+                <label for="reviewer_Name">Name:</label>
+                <input type="text" id="reviewer_Name" name="reviewer_Name" />
+            </section>
+            <section>
+                <h2>About your Sports Car</h2>
+                <div>
+                    <!--SportsCar Brand-->
+                    <label for="sportsCar_Brand"> Choose the Sports Car</label>
+                    <select id="sportsCar_Brand" name="sportsCar_Brand">
+                        <option value="bugatti">Bugatti</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="lamborghini">Lamborghini</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="porche">Porche</option>
+                        <option value="mercedes">Mercedes</option>
+                    </select>
+                </div>
+                <div>
+                    <!--SportsCar Model-->
+                    <label for="sportsCar_Model">Sports Car Model:</label>
+                    <input type="text" id="sportsCar_Model" name="sportsCar_Model" />
+                </div>
+                <div>
+                    <!--SportsCar Year-->
+                    <label for="sportsCar_Year">What Year is Your Car?</label>
+                    <select id="sportsCar_Year" name="sportsCar_Year">
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014_older">2014 And Below</option>
+                    </select>
+                </div>
+                <div>
+                    <!--SportsCar Color-->
+                    <label>What is the Color of your Car?</label>
+                    <div>
+                        <input type="radio" id="sportsCar_Red" name="sportsCar_Color" value="red" />
+                        <label for="sportsCar_Red">Red</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sportsCar_White" name="sportsCar_Color" value="white" />
+                        <label for="sportsCar_White">White</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sportsCar_Black" name="sportsCar_Color" value="black" />
+                        <label for="sportsCar_Black">Black</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sportsCar_Yellow" name="sportsCar_Color" value="yellow" />
+                        <label for="sportsCar_Yellow">Yellow</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sportsCar_OtherColor" name="sportsCar_Color" value="other_Color" />
+                        <label for="sportsCar_OtherColor">Other Color</label>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <!--Overall Rating-->
+                    <h2> Overall Rating</h2>
+                    <div>
+                        <input type="radio" id="reviewer_FiveStar" name="reviewer_Overall" value="5star" />
+                        <label for="reviewer_FiveStar">5 Stars</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reviewer_FourStar" name="reviewer_Overall" value="4star" />
+                        <label for="reviewer_FourStar">4 Stars</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reviewer_ThreeStar" name="reviewer_Overall" value="3star" />
+                        <label for="reviewer_ThreeStar">3 Stars</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reviewer_TwoStar" name="reviewer_Overall" value="2star" />
+                        <label for="reviewer_TwoStar">2 Stars</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reviewer_OneStar" name="reviewer_Overall" value="1star" />
+                        <label for="reviewer_OneStar">1 Star</label>
+                    </div>
+                </div>
+                <div>
+                    <!--Written Review-->
+                    <h2>Add a Written Review</h2>
+                    <div>
+                        <label for="reviewer_Review">What did you like or dislike about the car?</label>
+                    </div>
+                    <div>
+                        <textarea id="reviewer_Review" name="reviewer_Review"  cols="50" rows="10"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <!--Main Point-->
+                    <h2> Main point of Review</h2>
+                    <div>
+                        <input type="checkbox" id="sportsCar_Interior" name="sportsCar_Interior" value="interior" />
+                        <label for="sportsCar_Interior">Interior</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sportsCar_Exterior" name="sportsCar_Exterior" value="exterior" />
+                        <label for="sportsCar_Exterior">Exterior</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sportsCar_Reliability" name="sportsCar_Reliability" value="reliability" />
+                        <label for="sportsCar_Reliability">Reliability</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sportsCar_CargoSpace" name="sportsCar_CargoSpace" value="cargospace" />
+                        <label for="sportsCar_CargoSpace">Cargo Space</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sportsCar_Performance" name="sportsCar_Performance" value="performance" />
+                        <label for="sportsCar_Performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sportsCar_Safety" name="sportsCar_Safety" value="safety" />
+                        <label for="sportsCar_Safety">Safety</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sportsCar_Cost" name="sportsCar_Cost" value="cost" />
+                        <label for="sportsCar_Cost">Cost</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sportsCar_Efficiency" name="sportsCar_Efficiency" value="efficiency" />
+                        <label for="sportsCar_Efficiency">Efficiency</label>
+                    </div>
+                </div>
+                <div>
+                    <!--Title Review-->
+                    <h2>Add a Title</h2>
+                    <label for="reviewer_TitleReview">Sum up your review in one line</label>
+                    <div>
+                        <input type="text" id="reviewer_TitleReview" name="reviewer_TitleReview" placeholder="What is Important to know?" size="100" />
+                    </div>
+                </div>
+            </section>
+            <input type="submit" id="reviewer_Submit" name="reviewer_Submit" value="submit" />
+        </form>
+    </body>
+</html>
