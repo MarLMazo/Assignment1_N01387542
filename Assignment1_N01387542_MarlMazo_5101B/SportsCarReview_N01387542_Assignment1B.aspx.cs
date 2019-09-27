@@ -22,16 +22,17 @@ namespace Assignment1_N01387542_MarlMazo_5101B
                     string Reviewer_EmailAddress = reviewer_EmailAddress.Text.ToString();
                     string Reviewer_SportsCarBrand = sportsCar_Brand.Text.ToString();
                     string Reviewer_SportsCarModel = sportsCar_Model.Text.ToString();
-                    string Reviewer_SportsCarYear = sportsCar_Year.Text.ToString();
                     string Reviewer_SportsCarColor = sportsCar_Color.Text.ToString();
                     string Reviewer_Review = reviewer_Review.Text.ToString();
+                    string Reviewer_SportsCarYear = sportsCar_Year.Text.ToString();
+
                     int Reviewer_SportsCarSeat = Convert.ToInt32(sportsCar_Seat.Text);
                     int Reviewer_SportsCarPrice = int.Parse(sportsCar_Price.Text,NumberStyles.Currency);
                     //Numberstyles Resources in https://stackoverflow.com/questions/4094334/how-to-format-a-currency-string-to-integer by Khalos Year 2010
                     // Need to convert Car Price to a INT for example ( $64,000 to be converted to 64000) 
                     int Reviewer_OverAllStar = 0;
                     
-
+                        //TRUTH TABLE INCLUDED IN THE FOLDER
                         if ((Reviewer_SportsCarPrice >= 1000000 && (Reviewer_SportsCarYear == "2019"|| Reviewer_SportsCarYear == "2018")) || 
                            ((100000 < Reviewer_SportsCarPrice && Reviewer_SportsCarPrice < 1000000) && (Reviewer_SportsCarYear == "2019" || Reviewer_SportsCarYear == "2018")))
                             {
@@ -49,7 +50,7 @@ namespace Assignment1_N01387542_MarlMazo_5101B
                             {
                                 Reviewer_OverAllStar = 3;
                             }
-                        else if ((100000 < Reviewer_SportsCarPrice && Reviewer_SportsCarPrice < 1000000) && (Reviewer_SportsCarYear == "2015" || Reviewer_SportsCarYear == "2014_Older"))
+                        else if (Reviewer_SportsCarPrice <= 100000 && (Reviewer_SportsCarYear == "2015" || Reviewer_SportsCarYear == "2014_Older"))
                             {
                                 Reviewer_OverAllStar = 2;
                             }

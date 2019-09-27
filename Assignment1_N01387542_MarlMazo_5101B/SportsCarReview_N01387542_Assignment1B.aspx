@@ -16,7 +16,7 @@
                 <div>
                     <label>Name:</label>
                     <asp:TextBox runat="server" ID="reviewer_Name" ></asp:TextBox>
-                    <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please Enter Your Name" ControlToValidate="reviewer_Name"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator runat="server" EnableClientScript="true"  ControlToValidate="reviewer_Name" ErrorMessage="Please Enter Your Name"></asp:RequiredFieldValidator>
                 </div>
                 <div>
                     <label>Email Address:</label>
@@ -94,7 +94,7 @@
                     <label>What did you like or dislike about the car?</label>
                     <div>
                         <asp:TextBox TextMode="MultiLine" ID="reviewer_Review" runat="server" Columns="50" Rows="10"></asp:TextBox>
-                        <asp:RequiredFieldValidator runat="server" EnableToClientScript="true" ControlToValidate="reviewer_Review" ErrorMessage="Please Add Your Review"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ControlToValidate="reviewer_Review" ErrorMessage="Please Add Your Review"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div><!--Main point-->
